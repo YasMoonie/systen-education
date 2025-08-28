@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Escolar</title>
+    <link rel="stylesheet" href="css/style.css">
+    https://cdn.jsdelivr.net/npm/chart.js
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Desempenho dos Alunos</h1>
+        <div id="studentPerformance"></div>
+
+        <h2>Registrar Ocorrência</h2>
+        <form id="occurrenceForm">
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Horário:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="reason">Motivo:</label>
+            <select id="reason" name="reason">
+                <option value="indisciplina">Indisciplina</option>
+                <option value="atraso">Atraso</option>
+                <option value="falta">Falta</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="notes">Observações:</label>
+            <textarea id="notes" name="notes"></textarea>
+
+            <button type="submit">Salvar Ocorrência</button>
+        </form>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

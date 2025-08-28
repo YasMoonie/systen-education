@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Login - Sistema Escolar</title>
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+    <div  class='login-container' >
+        <div class='title-prof'>
+           
+        <form  id="titulo_prof">
+            <h2>Login do Professor</h2>
+
+        </form>
+        
+        </div>
+        
+        <form id='loginForm'>
+            <label for='username'>Usuário:</label>
+            <input type='text' id='username' name='username' required>
+            <label for='password'>Senha:</label>
+            <input type='password' id='password' name='password' required>
+            <button type='submit'>Entrar</button>
+        </form>
+
+        <div class='cadastro-links'>
+            <button onclick="window.location.href='cadastro_professor.html'">Cadastrar Professor</button>
+            <button onclick="window.location.href='cadastro_aluno.html'">Cadastrar Aluno</button>
+        </div>
+    </div>
+    <script src='js/login.js'></script>
+</body>
+</html>
